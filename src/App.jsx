@@ -1,7 +1,10 @@
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Banner from './component/Banner'
 import Crew from './component/Crew'
-import Tickets from './component/Ticket'
+import Tickets from './component/Tickets'
+import NavBar from './component/NavBar'
+
 const App = () => {
   const movie = "Bahubali - The Epic Movie of India"
   const releaseYear = 2019
@@ -15,7 +18,22 @@ const App = () => {
         </div>
       </header>
 
-      <section>
+  <section>
+    <NavBar/>
+  </section>
+  
+      <main>
+        <div>
+          <Routes>
+            <Route path = "/" element={<Banner />} />
+            <Route path = "/Crew" element={<Crew />} />
+            <Route path = "/Tickets" element={<Tickets />} />
+          </Routes>
+        </div>
+      </main>
+
+
+      {/* <section>
         <Banner />
       </section>
 
@@ -25,9 +43,9 @@ const App = () => {
 
       <section>
         <Tickets />
-      </section>
+      </section> */}
 
     </>
   )
 }
-export default App
+export default App 
