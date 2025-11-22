@@ -4,6 +4,7 @@ import Banner from './component/Banner'
 import Crew from './component/Crew'
 import Tickets from './component/Tickets'
 import NavBar from './component/NavBar'
+import StateProcess from './component/StateProcess'
 
 const App = () => {
   const movie = "Bahubali - The Epic Movie of India"
@@ -28,6 +29,7 @@ const App = () => {
             <Route path = "/" element={<Banner />} />
             <Route path = "/Crew" element={<Crew />} />
             <Route path = "/Tickets" element={<Tickets />} />
+            <Route path = "/StateProcess" element={<StateProcess />} />
           </Routes>
         </div>
       </main>
