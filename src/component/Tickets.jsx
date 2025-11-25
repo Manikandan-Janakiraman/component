@@ -2,7 +2,7 @@ import BahuImage from '../assets/card.jpeg'
 import leoImage from '../assets/leo.jpeg'
 import araImage from '../assets/ara.webp'
 
-const Ticket = () => {
+const Tickets = () => {
 
     const movieTicketDetails = [{ moviename: "Bahubali", img: BahuImage, time: "Morning", location: "PVR" },
     { moviename: "Leo", img: leoImage, time: "Afternoon", location: "Rohini" },
@@ -35,4 +35,4 @@ const Ticket = () => {
         </>
     )
 }
-export default Ticket
+export default Tickets
