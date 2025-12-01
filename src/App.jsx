@@ -6,6 +6,8 @@ import Tickets from './component/Tickets'
 import NavBar from './component/NavBar'
 import StateProcess from './component/StateProcess'
 import Props from './component/Props'
+import FormHandling from './component/FormHandling'
+
 
 
 const App = () => {
@@ -33,6 +35,7 @@ const App = () => {
             <Route path = "/Tickets" element={<Tickets />} />
             <Route path = "/StateProcess" element={<StateProcess />} />
             <Route path = "/Props" element={<Props />} />
+            <Route path = "/FormHandling" element={<FormHandling />} />
           </Routes>
         </div>
       </main>
